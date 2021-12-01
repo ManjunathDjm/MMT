@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SchoolOS]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://explore-staging.toppr.school/"/>
+  <test thread-count="5" name="SchoolOS(failed)">
+    <classes>
+      <class name="com.toppr.tests.Assignment">
+        <methods>
+          <include name="closedriver"/>
+          <include name="openBrowser"/>
+          <include name="EnglishIHaveDifferentQuestionPostTreatment"/>
+        </methods>
+      </class> <!-- com.toppr.tests.Assignment -->
+    </classes>
+  </test> <!-- SchoolOS(failed) -->
+</suite> <!-- Failed suite [SchoolOS] -->
