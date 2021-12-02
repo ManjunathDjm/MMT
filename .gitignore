@@ -22,7 +22,7 @@ dist/
 # Maven
 target/
 dist/
-.test-output
+test-output
 
 # JetBrains IDE
 .idea/

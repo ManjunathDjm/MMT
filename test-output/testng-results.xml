@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T14:33:17 IST" name="SchoolOS" finished-at="2021-12-01T14:33:30 IST" duration-ms="12877">
+  <suite started-at="2021-12-02T14:11:17 IST" name="SchoolOS" finished-at="2021-12-02T14:11:39 IST" duration-ms="21665">
     <groups>
     </groups>
-    <test started-at="2021-12-01T14:33:17 IST" name="SchoolOS" finished-at="2021-12-01T14:33:30 IST" duration-ms="12877">
+    <test started-at="2021-12-02T14:11:17 IST" name="SchoolOS" finished-at="2021-12-02T14:11:39 IST" duration-ms="21665">
       <class name="com.toppr.tests.Assignment">
-        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-01T14:33:17 IST" name="openBrowser" finished-at="2021-12-01T14:33:30 IST" duration-ms="12698" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-02T14:11:17 IST" name="openBrowser" finished-at="2021-12-02T14:11:39 IST" duration-ms="21521" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="EnglishIHaveDifferentQuestionPostTreatment()[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-01T14:33:30 IST" name="EnglishIHaveDifferentQuestionPostTreatment" finished-at="2021-12-01T14:33:30 IST" duration-ms="9" status="PASS">
+        <test-method signature="EnglishIHaveDifferentQuestionPostTreatment()[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-02T14:11:39 IST" name="EnglishIHaveDifferentQuestionPostTreatment" finished-at="2021-12-02T14:11:39 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnglishIHaveDifferentQuestionPostTreatment -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-01T14:33:30 IST" name="closedriver" finished-at="2021-12-01T14:33:30 IST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:com.toppr.tests.Assignment@1a6d8329]" started-at="2021-12-02T14:11:39 IST" name="closedriver" finished-at="2021-12-02T14:11:39 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedriver -->
