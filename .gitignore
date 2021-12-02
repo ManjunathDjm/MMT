@@ -49,4 +49,4 @@ Thumbs.db
 *.wmv
 
 # junk
-*.test-output/
+/test-output/*
