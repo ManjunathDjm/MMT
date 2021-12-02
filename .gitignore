@@ -22,7 +22,6 @@ dist/
 # Maven
 target/
 dist/
-test-output/
 
 # JetBrains IDE
 .idea/
@@ -48,4 +47,4 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-
+*.test-output
