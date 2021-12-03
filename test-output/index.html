@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SchoolOS" class="navigator-link">
-              <span class="suite-name border-passed">SchoolOS</span>
+              <span class="suite-name border-failed">SchoolOS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-SchoolOS" class="hide-methods passed suite-SchoolOS"> (hide)</a> <!-- hide-methods passed suite-SchoolOS -->
-                      <a href="#" panel-name="suite-SchoolOS" class="show-methods passed suite-SchoolOS"> (show)</a> <!-- show-methods passed suite-SchoolOS -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SchoolOS" class="hide-methods failed suite-SchoolOS"> (hide)</a> <!-- hide-methods failed suite-SchoolOS -->
+                      <a href="#" panel-name="suite-SchoolOS" class="show-methods failed suite-SchoolOS"> (show)</a> <!-- show-methods failed suite-SchoolOS -->
                     </span>
-                    <div class="method-list-content passed suite-SchoolOS">
+                    <div class="method-list-content failed suite-SchoolOS">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SchoolOS" title="com.toppr.tests.Assignment" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-SchoolOS -->
+                    </div> <!-- method-list-content failed suite-SchoolOS -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SchoolOS" class="panel SchoolOS">
-          <div class="suite-SchoolOS-class-passed">
+          <div class="suite-SchoolOS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.toppr.tests.Assignment</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,10 +130,38 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]&quot;}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-HQSRNSN&apos;, ip: &apos;172.20.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034117c86476ab8b5b30c8e57b5308dc, findElement {using=xpath, value=/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62848}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62848/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 034117c86476ab8b5b30c8e57b5308dc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.toppros.pages.LoginPage.password(LoginPage.java:61)
+	at com.toppr.tests.Assignment.Login(Assignment.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SchoolOS-class-passed -->
+          </div> <!-- suite-SchoolOS-class-failed -->
         </div> <!-- panel SchoolOS -->
         <div panel-name="test-xml-SchoolOS" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,12 +220,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'com.toppr.tests.Assignment')
-data.setCell(0, 3, 20321);
+data.setCell(0, 3, 40798);
 window.suiteTableData['SchoolOS']= { tableData: data, tableDiv: 'times-div-SchoolOS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-SchoolOS">
               </div> <!-- times-div-SchoolOS -->
             </div> <!-- times-div -->
@@ -229,12 +257,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">9042 ms</span>
+                <span class="method-start">7022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closedriver</span>
-                <span class="method-start">29367 ms</span>
+                <span class="method-start">47830 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

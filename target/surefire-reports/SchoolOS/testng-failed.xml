@@ -8,7 +8,7 @@
       <class name="com.toppr.tests.Assignment">
         <methods>
           <include name="openBrowser"/>
-          <include name="EnglishIHaveDifferentQuestionPostTreatment"/>
+          <include name="Login"/>
           <include name="closedriver"/>
         </methods>
       </class> <!-- com.toppr.tests.Assignment -->

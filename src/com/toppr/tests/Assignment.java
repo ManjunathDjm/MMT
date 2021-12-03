@@ -15,11 +15,12 @@ public class Assignment extends TestBase {
 
 		Homepage home = new Homepage();
 		home.Teacher();
-		Thread.sleep(10000);
-		
+
 		LoginPage login = new LoginPage();
 		login.phone("mobile");
-		Thread.sleep(10000);
+		login.password("password");
+		
+		
 		
 		
 		

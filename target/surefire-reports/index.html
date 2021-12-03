@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-SchoolOS">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SchoolOS" title="com.toppr.tests.Assignment" class="method navigator-link" hash-for-method="EnglishIHaveDifferentQuestionPostTreatment">EnglishIHaveDifferentQuestionPostTreatment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SchoolOS" title="com.toppr.tests.Assignment" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-SchoolOS -->
@@ -125,30 +125,35 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EnglishIHaveDifferentQuestionPostTreatment">
-                  </a> <!-- EnglishIHaveDifferentQuestionPostTreatment -->
-                  <span class="method-name">EnglishIHaveDifferentQuestionPostTreatment</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]&quot;}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-HQSRNSN&apos;, ip: &apos;172.20.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
-	at org.openqa.selenium.By.className(By.java:100)
-	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
-	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
-	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
-	at com.toppros.pages.LoginPage.&lt;init&gt;(LoginPage.java:32)
-	at com.toppr.tests.Assignment.EnglishIHaveDifferentQuestionPostTreatment(Assignment.java:19)
-... Removed 29 stack frames
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [647fdc699f54d2785cd4ad3d9e116b8a, findElement {using=xpath, value=/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52782}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52782/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 647fdc699f54d2785cd4ad3d9e116b8a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.toppros.pages.LoginPage.password(LoginPage.java:61)
+	at com.toppr.tests.Assignment.Login(Assignment.java:23)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -210,14 +215,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EnglishIHaveDifferentQuestionPostTreatment')
+data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'com.toppr.tests.Assignment')
-data.setCell(0, 3, 10207);
+data.setCell(0, 3, 40700);
 window.suiteTableData['SchoolOS']= { tableData: data, tableDiv: 'times-div-SchoolOS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-SchoolOS">
               </div> <!-- times-div-SchoolOS -->
             </div> <!-- times-div -->
@@ -251,12 +256,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">EnglishIHaveDifferentQuestionPostTreatment</span>
-                <span class="method-start">6687 ms</span>
+                <span class="method-name">Login</span>
+                <span class="method-start">6985 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closedriver</span>
-                <span class="method-start">16904 ms</span>
+                <span class="method-start">47694 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
