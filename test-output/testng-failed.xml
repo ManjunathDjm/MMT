@@ -9,7 +9,7 @@
         <methods>
           <include name="closedriver"/>
           <include name="openBrowser"/>
-          <include name="EnglishIHaveDifferentQuestionPostTreatment"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- com.toppr.tests.Assignment -->
     </classes>

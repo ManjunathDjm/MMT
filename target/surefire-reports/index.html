@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SchoolOS" class="navigator-link">
-              <span class="suite-name border-skipped">SchoolOS</span>
+              <span class="suite-name border-failed">SchoolOS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-SchoolOS" class="hide-methods skipped suite-SchoolOS"> (hide)</a> <!-- hide-methods skipped suite-SchoolOS -->
-                      <a href="#" panel-name="suite-SchoolOS" class="show-methods skipped suite-SchoolOS"> (show)</a> <!-- show-methods skipped suite-SchoolOS -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SchoolOS" class="hide-methods failed suite-SchoolOS"> (hide)</a> <!-- hide-methods failed suite-SchoolOS -->
+                      <a href="#" panel-name="suite-SchoolOS" class="show-methods failed suite-SchoolOS"> (show)</a> <!-- show-methods failed suite-SchoolOS -->
                     </span>
-                    <div class="method-list-content skipped suite-SchoolOS">
+                    <div class="method-list-content failed suite-SchoolOS">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SchoolOS" title="com.toppr.tests.Assignment" class="method navigator-link" hash-for-method="EnglishIHaveDifferentQuestionPostTreatment">EnglishIHaveDifferentQuestionPostTreatment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-SchoolOS -->
+                    </div> <!-- method-list-content failed suite-SchoolOS -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SchoolOS" class="panel SchoolOS">
-          <div class="suite-SchoolOS-class-skipped">
+          <div class="suite-SchoolOS-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.toppr.tests.Assignment</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,22 +128,32 @@
                   <a name="EnglishIHaveDifferentQuestionPostTreatment">
                   </a> <!-- EnglishIHaveDifferentQuestionPostTreatment -->
                   <span class="method-name">EnglishIHaveDifferentQuestionPostTreatment</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:280)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:185)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
-	at com.toppros.base.TestBase.openBrowser(TestBase.java:42)
-... Removed 32 stack frames
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-HQSRNSN&apos;, ip: &apos;172.20.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at com.toppros.pages.LoginPage.&lt;init&gt;(LoginPage.java:32)
+	at com.toppr.tests.Assignment.EnglishIHaveDifferentQuestionPostTreatment(Assignment.java:19)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SchoolOS-class-skipped -->
+          </div> <!-- suite-SchoolOS-class-failed -->
         </div> <!-- panel SchoolOS -->
         <div panel-name="test-xml-SchoolOS" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -202,12 +212,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'EnglishIHaveDifferentQuestionPostTreatment')
 data.setCell(0, 2, 'com.toppr.tests.Assignment')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 10207);
 window.suiteTableData['SchoolOS']= { tableData: data, tableDiv: 'times-div-SchoolOS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-SchoolOS">
               </div> <!-- times-div-SchoolOS -->
             </div> <!-- times-div -->
@@ -234,16 +244,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.toppr.tests.Assignment</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">EnglishIHaveDifferentQuestionPostTreatment</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">openBrowser(chrome, https://explore-staging.toppr.school/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EnglishIHaveDifferentQuestionPostTreatment</span>
+                <span class="method-start">6687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closedriver</span>
+                <span class="method-start">16904 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

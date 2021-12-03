@@ -2,17 +2,26 @@ package com.toppr.tests;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.toppros.base.TestBase;
+import com.toppros.pages.Homepage;
+import com.toppros.pages.LoginPage;
 
 
 public class Assignment extends TestBase {
 	
 	@Parameters("browser")
 	@Test()
-	public void EnglishIHaveDifferentQuestionPostTreatment() throws Exception {
+	public void Login() throws Exception {
 
-		Assignment home = new Assignment();
+		Homepage home = new Homepage();
+		home.Teacher();
+		Thread.sleep(10000);
+		
+		LoginPage login = new LoginPage();
+		login.phone("mobile");
+		Thread.sleep(10000);
+		
+		
 		
   }
 }

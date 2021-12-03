@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.toppros.base.TestBase;
-import com.topprschool.util.PropertiesData;
 
 import org.apache.log4j.Logger;
 
@@ -17,32 +16,32 @@ import org.apache.log4j.Logger;
  * @author manjunathdj
  *
  */
-public class LoginPage extends TestBase {
+public class Homepage extends TestBase {
 
 	private static final Logger logger = org.apache.log4j.Logger.getLogger(Homepage.class);
 
-	@FindBy(id ="countryPhone")
-	WebElement phone;
-		
-	public LoginPage() {
+	@FindBy(className ="shared-LandingSection__arrow--3867J")
+	WebElement TeacherStarthere;
+
+	public Homepage() {
 
 		PageFactory.initElements(driver, this);
 	}
 
-	public void phone(String mobile) throws Exception {
+	public void Teacher() {
 
 		if (logger.isDebugEnabled()) {
-			logger.debug("entering phone ");
+			logger.debug("entering teacher start here ");
 		}
 		try {
-			phone.sendKeys(PropertiesData.getObject("mobile"));
+			TeacherStarthere.click();
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 
 		}
 		if (logger.isDebugEnabled()) {
-			logger.debug("exiting phone()");
+			logger.debug("exiting teacher start here()");
 		}
 	}
 }

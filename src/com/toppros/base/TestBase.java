@@ -1,5 +1,6 @@
 package com.toppros.base;
 
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.BasicConfigurator;
@@ -11,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import com.topprschool.util.PropertiesData;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
@@ -24,7 +27,8 @@ public class TestBase {
 
 	private static final Logger logger = Logger.getLogger(TestBase.class);
 	public static WebDriver driver;
-
+	Properties prop=new Properties();
+	
 	@Parameters({ "browser", "url" })
 	@BeforeMethod
 	public void openBrowser(String browser, String url) throws Exception {
