@@ -19,6 +19,10 @@ public class Assignment extends TestBase {
 		LoginPage login = new LoginPage();
 		login.phone("mobile");
 		login.password("password");
+		login.loginbutton();
+		Thread.sleep(10000);
+
+	
 		
 		
 		

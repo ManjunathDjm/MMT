@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.toppros.base.TestBase;
 import com.topprschool.util.PropertiesData;
 
+import org.apache.commons.collections4.functors.ExceptionPredicate;
 import org.apache.log4j.Logger;
 
 /**
@@ -28,8 +29,11 @@ public class LoginPage extends TestBase {
 	WebElement loginbutton;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]")
-	WebElement pass;
+	WebElement loginpassword;
 
+	@FindBy(xpath ="/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[4]/button[1]")
+	WebElement loginbuttonpassword;
+	
 	public LoginPage() {
 
 		PageFactory.initElements(driver, this);
@@ -57,8 +61,12 @@ public class LoginPage extends TestBase {
 	
 	public void password(String password) throws Exception {
 		
-		pass.sendKeys(PropertiesData.getObject("password"));
-		loginbutton.click();
+		loginpassword.sendKeys(PropertiesData.getObject("password"));
+	
+	}
+	
+	public void loginbutton() throws Exception {
 		
+		loginbuttonpassword.click();
 	}
 }
