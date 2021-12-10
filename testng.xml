@@ -6,6 +6,12 @@
   <test thread-count="50" name="SchoolOS">
     <classes>  
        <class name="com.toppr.tests.Assignment"/>
+
+
+
+
+
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

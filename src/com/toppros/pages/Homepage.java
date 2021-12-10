@@ -18,9 +18,7 @@ import org.apache.log4j.Logger;
  */
 public class Homepage extends TestBase {
 
-	private static final Logger logger = org.apache.log4j.Logger.getLogger(Homepage.class);
-
-	@FindBy(className ="shared-LandingSection__arrow--3867J")
+	@FindBy(className = "shared-LandingSection__arrow--3867J")
 	WebElement TeacherStarthere;
 
 	public Homepage() {
@@ -30,18 +28,7 @@ public class Homepage extends TestBase {
 
 	public void Teacher() {
 
-		if (logger.isDebugEnabled()) {
-			logger.debug("entering teacher start here ");
-		}
-		try {
-			TeacherStarthere.click();
-		} catch (NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		TeacherStarthere.click();
 
-		}
-		if (logger.isDebugEnabled()) {
-			logger.debug("exiting teacher start here()");
-		}
 	}
 }
