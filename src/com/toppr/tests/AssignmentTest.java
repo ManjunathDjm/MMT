@@ -2,12 +2,15 @@ package com.toppr.tests;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.thoughtworks.qdox.model.expression.Assignment;
 import com.toppros.base.TestBase;
 import com.toppros.pages.Homepage;
 import com.toppros.pages.LoginPage;
+import com.toppros.pages.TopprExplorerPage;
 
 
-public class Assignment extends TestBase {
+public class AssignmentTest extends TestBase{
 	
 	@Parameters("browser")
 	@Test()
@@ -21,10 +24,13 @@ public class Assignment extends TestBase {
 		login.password("password");
 		login.loginbutton();
 		
-		Assignment a= new Assignment();
+        TopprExplorerPage explorer = new TopprExplorerPage();
+        explorer.assignmenttab();
+        Thread.sleep(20000);
+		
 		
 
-	
+
 		
 		
 		

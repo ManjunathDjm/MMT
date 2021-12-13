@@ -5,13 +5,13 @@
   <parameter name="url" value="https://explore-staging.toppr.school/"/>
   <test thread-count="5" name="SchoolOS(failed)">
     <classes>
-      <class name="com.toppr.tests.Assignment">
+      <class name="com.toppr.tests.AssignmentTest">
         <methods>
           <include name="closedriver"/>
           <include name="openBrowser"/>
           <include name="Login"/>
         </methods>
-      </class> <!-- com.toppr.tests.Assignment -->
+      </class> <!-- com.toppr.tests.AssignmentTest -->
     </classes>
   </test> <!-- SchoolOS(failed) -->
 </suite> <!-- Failed suite [SchoolOS] -->

@@ -23,7 +23,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]")
 	WebElement loginbutton;
 
-	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "//input[@id='password']")
 	WebElement loginpassword;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[4]/button[1]")
@@ -55,7 +55,7 @@ public class LoginPage extends TestBase {
 	}
 
 	public void password(String password) throws Exception {
-
+        
 		loginpassword.sendKeys(PropertiesData.getObject("password"));
 
 	}
