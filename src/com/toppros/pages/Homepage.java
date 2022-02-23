@@ -25,7 +25,7 @@ public class Homepage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void Teacher() {
+	public void teacher() {
 
 		TeacherStarthere.click();
 
