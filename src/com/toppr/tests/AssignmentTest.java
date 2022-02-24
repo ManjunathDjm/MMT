@@ -16,7 +16,8 @@ public class AssignmentTest extends TestBase{
 	public void Login() throws Exception {
 
 		Homepage home = new Homepage();
-		home.Teacher();
+		home.teacher();
+		//home.test();
 
 		LoginPage login = new LoginPage();
 		login.phone("mobile");
