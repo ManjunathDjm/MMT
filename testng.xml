@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SchoolOS">
+<suite name="MMT">
     <parameter name="browser"  value="chrome"/>
     <parameter name="url"  value="https://www.makemytrip.com/"/>
-  <test thread-count="50" name="SchoolOS">
+  <test thread-count="50" name="MMT">
     <classes>  
        <class name="com.mmt.tests.AssignmentTestMMT"/>
     </classes>
