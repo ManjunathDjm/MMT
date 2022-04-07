@@ -20,13 +20,13 @@ dist/
 *.jar
 
 # Maven
-target/
-dist/
-settings/
-classpath
-project
-pom.xml
-testng.xml
+*.target/
+*.dist/
+*.settings/
+*.classpath
+*.project
+*.pom.xml
+*.testng.xml
 
 # JetBrains IDE
 .idea/
