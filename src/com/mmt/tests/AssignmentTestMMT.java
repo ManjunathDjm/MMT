@@ -8,7 +8,7 @@ import com.mmt.pages.HotelPage;
 import com.mmt.pages.LoginPage;
 
 
-public class AssignmentTest extends TestBase{
+public class AssignmentTestMMT extends TestBase{
 	
 
 	@Test()

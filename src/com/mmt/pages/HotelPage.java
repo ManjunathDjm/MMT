@@ -32,7 +32,7 @@ public class HotelPage extends TestBase {
 	@FindBy(xpath = "//div[2]//div[1]//div[1]//nav[1]//ul[1]//li[2]//a[1]")
 	WebElement HotelIcon;
 	
-	@FindBy(xpath = "//label[contains(text(),'₹ 0 - ₹ 2000')]")
+	@FindBy(xpath = "//label[contains(text(),'₹ 30000+')]")
 	WebElement HotelPrice;
 	
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]/div[1]/div[1]/div[2]")

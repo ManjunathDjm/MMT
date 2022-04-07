@@ -33,7 +33,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//div[@aria-label='Thu Apr 07 2022']")
 	WebElement checkindate;
 	
-	@FindBy(xpath="//div[@aria-label='Fri Apr 15 2022']")
+	@FindBy(xpath="//div[@aria-label='Thu Apr 14 2022']")
 	WebElement checkoutdate;
 	
 	@FindBy(id="guest")

@@ -1,6 +1,6 @@
 .settings/*
 target/*
-Bin/*
+bin/*
 test-output/*
 .classpath/*
 .project/*

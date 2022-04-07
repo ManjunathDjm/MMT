@@ -5,7 +5,7 @@
     <parameter name="url"  value="https://www.makemytrip.com/"/>
   <test thread-count="50" name="SchoolOS">
     <classes>  
-       <class name="com.mmt.tests.AssignmentTest"/>
+       <class name="com.mmt.tests.AssignmentTestMMT"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
