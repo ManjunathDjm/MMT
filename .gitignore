@@ -22,11 +22,6 @@ dist/
 # Maven
 *.target/
 *.dist/
-*.settings/
-*.classpath
-*.project
-*.pom.xml
-*.testng.xml
 
 # JetBrains IDE
 .idea/
