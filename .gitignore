@@ -22,6 +22,11 @@ dist/
 # Maven
 target/
 dist/
+settings/
+classpath
+project
+pom.xml
+testng.xml
 
 # JetBrains IDE
 .idea/
@@ -50,8 +55,4 @@ Thumbs.db
 
 # junk
 test-output/
-settings/
-classpath
-project
-pom.xml
-testng.xml
+
