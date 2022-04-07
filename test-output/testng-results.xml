@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-14T18:59:39 IST" name="SchoolOS" finished-at="2021-12-14T19:00:53 IST" duration-ms="73631">
+  <suite started-at="2022-04-07T16:30:14 IST" name="SchoolOS" finished-at="2022-04-07T16:32:53 IST" duration-ms="159269">
     <groups>
     </groups>
-    <test started-at="2021-12-14T18:59:39 IST" name="SchoolOS" finished-at="2021-12-14T19:00:53 IST" duration-ms="73631">
-      <class name="com.toppr.tests.AssignmentTest">
-        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.toppr.tests.AssignmentTest@1a6d8329]" started-at="2021-12-14T18:59:39 IST" name="openBrowser" finished-at="2021-12-14T19:00:11 IST" duration-ms="32338" status="PASS">
+    <test started-at="2022-04-07T16:30:14 IST" name="SchoolOS" finished-at="2022-04-07T16:32:53 IST" duration-ms="159269">
+      <class name="com.mmt.tests.AssignmentTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.mmt.tests.AssignmentTest@1a6d8329]" started-at="2022-04-07T16:30:14 IST" name="openBrowser" finished-at="2022-04-07T16:30:19 IST" duration-ms="5812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,36 +16,36 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://explore-staging.toppr.school/]]>
+                <![CDATA[https://www.makemytrip.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="Login()[pri:0, instance:com.toppr.tests.AssignmentTest@1a6d8329]" started-at="2021-12-14T19:00:11 IST" name="Login" finished-at="2021-12-14T19:00:52 IST" duration-ms="40954" status="FAIL">
+        <test-method signature="Login()[pri:0, instance:com.mmt.tests.AssignmentTest@1a6d8329]" started-at="2022-04-07T16:30:19 IST" name="Login" finished-at="2022-04-07T16:32:53 IST" duration-ms="153228" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[2]"}
-  (Session info: chrome=96.0.4664.93)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='apldFltr__item--close']"}
+  (Session info: chrome=100.0.4896.75)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-HQSRNSN', ip: '172.20.10.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'DESKTOP-HQSRNSN', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21585b0f26190009e7380f6a0b905dfa, findElement {using=xpath, value=/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63978/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 21585b0f26190009e7380f6a0b905dfa]]>
+Command: [96c8d2f280cfd575433afc68a0c17143, findElement {using=xpath, value=//button[@class='apldFltr__item--close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56172/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96c8d2f280cfd575433afc68a0c17143]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[2]"}
-  (Session info: chrome=96.0.4664.93)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='apldFltr__item--close']"}
+  (Session info: chrome=100.0.4896.75)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-HQSRNSN', ip: '172.20.10.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'DESKTOP-HQSRNSN', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [21585b0f26190009e7380f6a0b905dfa, findElement {using=xpath, value=/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63978}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63978/devtoo..., se:cdpVersion: 96.0.4664.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 21585b0f26190009e7380f6a0b905dfa
+Command: [96c8d2f280cfd575433afc68a0c17143, findElement {using=xpath, value=//button[@class='apldFltr__item--close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56172/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96c8d2f280cfd575433afc68a0c17143
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -65,8 +65,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.toppros.pages.TopprExplorerPage.assignmenttab(TopprExplorerPage.java:32)
-at com.toppr.tests.AssignmentTest.Login(AssignmentTest.java:27)
+at com.mmt.pages.HotelPage.selecthotel(HotelPage.java:83)
+at com.mmt.tests.AssignmentTest.Login(AssignmentTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -101,11 +101,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closedriver()[pri:0, instance:com.toppr.tests.AssignmentTest@1a6d8329]" started-at="2021-12-14T19:00:52 IST" name="closedriver" finished-at="2021-12-14T19:00:53 IST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:com.mmt.tests.AssignmentTest@1a6d8329]" started-at="2022-04-07T16:32:53 IST" name="closedriver" finished-at="2022-04-07T16:32:53 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedriver -->
-      </class> <!-- com.toppr.tests.AssignmentTest -->
+      </class> <!-- com.mmt.tests.AssignmentTest -->
     </test> <!-- SchoolOS -->
   </suite> <!-- SchoolOS -->
 </testng-results>

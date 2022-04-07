@@ -1,8 +1,0 @@
-com\toppros\pages\TopprExplorerPage.class
-com\toppros\base\TestBase.class
-com\toppros\pages\Homepage.class
-com\toppros\pages\LoginPage.class
-com\topprschool\util\PropertiesData.class
-com\toppros\base\TestUtils.class
-com\toppr\tests\PracticeTest.class
-com\toppr\tests\AssignmentTest.class

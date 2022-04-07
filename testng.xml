@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SchoolOS">
     <parameter name="browser"  value="chrome"/>
-    <parameter name="url"  value="https://explore-staging.toppr.school/"/>
+    <parameter name="url"  value="https://www.makemytrip.com/"/>
   <test thread-count="50" name="SchoolOS">
     <classes>  
-       <class name="com.toppr.tests.AssignmentTest"/>
+       <class name="com.mmt.tests.AssignmentTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
